@@ -19,13 +19,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         actionButton.layer.cornerRadius = 15
         
-
-        greenLight.layer.cornerRadius = greenLight.bounds.width / 2.0
-
-        redLight.layer.cornerRadius = redLight.bounds.width / 2
-
+        greenLight.layer.cornerRadius = greenLight.bounds.width / 2
         yellowLight.layer.cornerRadius = yellowLight.bounds.width / 2
-
+        redLight.layer.cornerRadius = redLight.bounds.width / 2
     }
     
     
@@ -36,12 +32,16 @@ class ViewController: UIViewController {
         if redLight.alpha == yellowLight.alpha {
             redLight.alpha = CGFloat(MAXFLOAT)
             greenLight.alpha = 0.3
-            }
-        else if yellowLight.alpha != CGFloat(MAXFLOAT) && redLight.alpha == CGFloat(MAXFLOAT) && greenLight.alpha != CGFloat(MAXFLOAT) {
+        }
+        else if yellowLight.alpha != CGFloat(MAXFLOAT)
+                    && redLight.alpha == CGFloat(MAXFLOAT)
+                    && greenLight.alpha != CGFloat(MAXFLOAT) {
             yellowLight.alpha = CGFloat(MAXFLOAT)
             redLight.alpha = 0.3
         }
-        else if greenLight.alpha != CGFloat(MAXFLOAT) && yellowLight.alpha == CGFloat(MAXFLOAT) && redLight.alpha != CGFloat(MAXFLOAT) {
+        else if greenLight.alpha != CGFloat(MAXFLOAT)
+                    && yellowLight.alpha == CGFloat(MAXFLOAT)
+                    && redLight.alpha != CGFloat(MAXFLOAT) {
             greenLight.alpha = CGFloat(MAXFLOAT)
             yellowLight.alpha = 0.3
         }
