@@ -31,25 +31,25 @@
                                     <action selector="actionButtonTrafficLightControl" destination="BYZ-38-t0r" eventType="touchUpInside" id="edc-qP-4oM"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-7m-QGt">
-                                <rect key="frame" x="123" y="118" width="181" height="583"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-7m-QGt">
+                                <rect key="frame" x="123" y="118" width="182" height="583"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0cR-VG-6l0">
-                                        <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
+                                        <rect key="frame" x="0.6666666666666714" y="0.0" width="181" height="181"/>
                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="0cR-VG-6l0" secondAttribute="height" multiplier="1:1" id="bWq-h0-H96"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YRj-d1-MGo">
-                                        <rect key="frame" x="0.0" y="201" width="181" height="181"/>
+                                        <rect key="frame" x="0.6666666666666714" y="201" width="181" height="181"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="YRj-d1-MGo" secondAttribute="height" multiplier="1:1" id="aql-fF-JMD"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XtU-Tr-CGE">
-                                        <rect key="frame" x="0.0" y="402" width="181" height="181"/>
+                                        <rect key="frame" x="0.6666666666666714" y="402" width="181" height="181"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="XtU-Tr-CGE" secondAttribute="height" multiplier="1:1" id="Tnn-g5-B1f"/>
@@ -57,19 +57,23 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="YRj-d1-MGo" firstAttribute="centerX" secondItem="kGF-7m-QGt" secondAttribute="centerX" id="ci3-1L-nu9"/>
+                                    <constraint firstItem="YRj-d1-MGo" firstAttribute="centerY" secondItem="kGF-7m-QGt" secondAttribute="centerY" id="hRa-9M-Vwe"/>
+                                </constraints>
                                 <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kGF-7m-QGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="FeL-iG-GpU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="kGF-7m-QGt" secondAttribute="bottom" constant="191" id="SpV-d3-PP0"/>
+                            <constraint firstAttribute="bottom" secondItem="kGF-7m-QGt" secondAttribute="bottom" constant="225" id="5B8-m9-mi5"/>
+                            <constraint firstItem="kGF-7m-QGt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SLw-43-OlU"/>
                             <constraint firstAttribute="bottom" secondItem="EvY-b2-0QN" secondAttribute="bottom" constant="34" id="T3r-En-BNU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kGF-7m-QGt" secondAttribute="trailing" constant="124" id="ZrZ-RU-1nk"/>
-                            <constraint firstItem="kGF-7m-QGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="bVF-gz-1AW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EvY-b2-0QN" secondAttribute="trailing" constant="16" id="dWs-Ys-600"/>
+                            <constraint firstItem="kGF-7m-QGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="i3L-AQ-uEb"/>
                             <constraint firstItem="EvY-b2-0QN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jdy-rH-uvJ"/>
+                            <constraint firstItem="kGF-7m-QGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="nbw-h1-ozg"/>
                         </constraints>
                     </view>
                     <connections>
