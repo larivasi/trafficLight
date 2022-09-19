@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="trafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvY-b2-0QN">
-                                <rect key="frame" x="16" y="842" width="396" height="50"/>
+                                <rect key="frame" x="16" y="848" width="398" height="50"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7o9-AM-L6S"/>
@@ -32,10 +32,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-7m-QGt">
-                                <rect key="frame" x="123" y="118" width="181" height="583"/>
+                                <rect key="frame" x="123" y="143" width="183" height="530"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0cR-VG-6l0">
-                                        <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
+                                        <rect key="frame" x="10" y="0.0" width="163.33333333333334" height="163.33333333333334"/>
                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -45,14 +45,14 @@
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YRj-d1-MGo">
-                                        <rect key="frame" x="0.0" y="201" width="181" height="181"/>
+                                        <rect key="frame" x="10" y="183.33333333333331" width="163.33333333333334" height="163.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="YRj-d1-MGo" secondAttribute="height" multiplier="1:1" id="aql-fF-JMD"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XtU-Tr-CGE">
-                                        <rect key="frame" x="0.0" y="402" width="181" height="181"/>
+                                        <rect key="frame" x="10" y="366.66666666666669" width="163.33333333333334" height="163.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="XtU-Tr-CGE" secondAttribute="height" multiplier="1:1" id="Tnn-g5-B1f"/>
@@ -70,13 +70,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="kGF-7m-QGt" secondAttribute="bottom" constant="225" id="5B8-m9-mi5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kGF-7m-QGt" secondAttribute="trailing" constant="124" id="LBv-sN-1CC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kGF-7m-QGt" secondAttribute="bottom" constant="225" id="3h9-cW-rm4"/>
+                            <constraint firstItem="kGF-7m-QGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="8Rp-GW-cLZ"/>
                             <constraint firstAttribute="bottom" secondItem="EvY-b2-0QN" secondAttribute="bottom" constant="34" id="T3r-En-BNU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EvY-b2-0QN" secondAttribute="trailing" constant="16" id="dWs-Ys-600"/>
-                            <constraint firstItem="kGF-7m-QGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="i3L-AQ-uEb"/>
                             <constraint firstItem="EvY-b2-0QN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jdy-rH-uvJ"/>
-                            <constraint firstItem="kGF-7m-QGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="nbw-h1-ozg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kGF-7m-QGt" secondAttribute="trailing" constant="124" id="qBL-Xi-o0H"/>
+                            <constraint firstItem="kGF-7m-QGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="zWN-ML-a2f"/>
                         </constraints>
                     </view>
                     <connections>
