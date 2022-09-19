@@ -32,24 +32,27 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-7m-QGt">
-                                <rect key="frame" x="123" y="118" width="182" height="583"/>
+                                <rect key="frame" x="123" y="118" width="181" height="583"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0cR-VG-6l0">
-                                        <rect key="frame" x="0.6666666666666714" y="0.0" width="181" height="181"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="0cR-VG-6l0" secondAttribute="height" multiplier="1:1" id="bWq-h0-H96"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YRj-d1-MGo">
-                                        <rect key="frame" x="0.6666666666666714" y="201" width="181" height="181"/>
+                                        <rect key="frame" x="0.0" y="201" width="181" height="181"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="YRj-d1-MGo" secondAttribute="height" multiplier="1:1" id="aql-fF-JMD"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XtU-Tr-CGE">
-                                        <rect key="frame" x="0.6666666666666714" y="402" width="181" height="181"/>
+                                        <rect key="frame" x="0.0" y="402" width="181" height="181"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="XtU-Tr-CGE" secondAttribute="height" multiplier="1:1" id="Tnn-g5-B1f"/>
@@ -68,7 +71,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="kGF-7m-QGt" secondAttribute="bottom" constant="225" id="5B8-m9-mi5"/>
-                            <constraint firstItem="kGF-7m-QGt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SLw-43-OlU"/>
                             <constraint firstAttribute="bottom" secondItem="EvY-b2-0QN" secondAttribute="bottom" constant="34" id="T3r-En-BNU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EvY-b2-0QN" secondAttribute="trailing" constant="16" id="dWs-Ys-600"/>
                             <constraint firstItem="kGF-7m-QGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="i3L-AQ-uEb"/>
