@@ -19,9 +19,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         actionButton.layer.cornerRadius = 15
         
-        greenLight.layer.cornerRadius = greenLight.bounds.width / 2
-        yellowLight.layer.cornerRadius = yellowLight.bounds.width / 2
-        redLight.layer.cornerRadius = redLight.bounds.width / 2
+//        greenLight.layer.cornerRadius = greenLight.bounds.width / 2
+//        yellowLight.layer.cornerRadius = yellowLight.bounds.width / 2
+//        redLight.layer.cornerRadius = redLight.bounds.width / 2
     }
     
     
